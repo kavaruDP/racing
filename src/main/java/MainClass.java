@@ -4,7 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class MainClass {
-    public static final int CARS_COUNT = 10;
+    public static final int CARS_COUNT = 3;
     //Две защелки для подготовки машин и для фиксации окончания гонки. Повторно применять их нельзя!
     public static CountDownLatch cdlR = new CountDownLatch(CARS_COUNT);
     public static CountDownLatch cdlF = new CountDownLatch(CARS_COUNT);
